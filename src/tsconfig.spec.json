@@ -1,4 +1,5 @@
 {
+  
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "outDir": "../out-tsc/spec",
@@ -9,11 +10,17 @@
       "node"
     ]
   },
+  "paths" : {
+  "@app/*" : ["app/*"],
+  "@env/*" : ["environments/*"]
+},
   "files": [
     "test.ts"
   ],
+  
   "include": [
     "**/*.spec.ts",
     "**/*.d.ts"
   ]
+  
 }

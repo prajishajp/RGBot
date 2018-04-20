@@ -1,0 +1,6 @@
+
+    <div class="chatcontrol"> 
+        <input type="text" class="form-control chatinput" placeholder="Enter the text" [(ngModel)]="message.content" (keyup.enter)="sendMessage()"/>
+        <button class="btn btn-success sendbtn" (click)="sendMessage()">Send</button>
+      </div>
+      
